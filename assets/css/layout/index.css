@@ -1,3 +1,7 @@
+@import url('http://fonts.cdnfonts.com/css/circular-std');
+body{
+    font-family: 'Circular Std', sans-serif;
+}
 .container-conteudo, .title-info, ul, .line{
     display: flex;
     justify-content: center;
@@ -195,7 +199,7 @@ footer p{
         padding-bottom: 2.8rem;
     }
     .info-1, .info-2, .info-3{
-        margin-left: rem;
+        margin-left: 1rem;
     }
 
 }
