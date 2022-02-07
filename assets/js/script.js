@@ -10,6 +10,7 @@ let data = new Date()
 let hora = data.getHours()
 if(hora >= 0 && hora <= 12) {
     textoHorario.innerHTML += 'Bom dia,'
+    
 }else if(hora >= 12 && hora <= 18){
     textoHorario.innerHTML = 'Boa tarde,'
 }else{
