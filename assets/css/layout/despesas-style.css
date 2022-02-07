@@ -1,0 +1,25 @@
+@import "./menu.css";
+@import "./dashboard-style.css";
+@import "./modal-style.css";
+
+@import url('http://fonts.cdnfonts.com/css/circular-std');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Circular Std', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: #f8fefb;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #14a35b;
+    border-radius: 20px; 
+    border: 3px solid #f8fefb;
+}
