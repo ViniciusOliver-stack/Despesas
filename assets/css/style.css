@@ -3,4 +3,6 @@
 @import './layout/index.css';
 @import './layout/menu.css';
 
-@import './reset.css'
+@import './layout/nome-usuario.css';
+
+@import './reset.css';
