@@ -12,10 +12,8 @@ if(hora >= 0 && hora <= 12) {
     textoHorario.innerHTML += 'Bom dia,'
 }else if(hora >= 12 && hora <= 18){
     textoHorario.innerHTML = 'Boa tarde,'
-    iconHorario.src = 'https://cdn-icons-png.flaticon.com/512/1163/1163661.png'
 }else{
     textoHorario.innerHTML = 'Boa noite,'
-    iconHorario.src = 'https://cdn-icons-png.flaticon.com/512/6735/6735121.png'
 }
 
 nomeUsuario.innerText = localStorage.nome
