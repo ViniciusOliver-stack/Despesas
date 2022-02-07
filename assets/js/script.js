@@ -6,12 +6,10 @@ const modalDialog = document.querySelector('#modal-dialog')
 const btnFechar = document.querySelector('#btn-fechar')
 
 //Horario || Dashboard
-
 let data = new Date()
 let hora = data.getHours()
 if(hora >= 0 && hora <= 12) {
     textoHorario.innerHTML += 'Bom dia,'
-    iconHorario.src = 'https://cdn-icons-png.flaticon.com/512/869/869869.png'
 }else if(hora >= 12 && hora <= 18){
     textoHorario.innerHTML = 'Boa tarde,'
     iconHorario.src = 'https://cdn-icons-png.flaticon.com/512/1163/1163661.png'
