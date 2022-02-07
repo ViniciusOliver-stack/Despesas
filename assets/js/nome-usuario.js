@@ -1,9 +1,5 @@
-const inputUser = document.querySelector('#inputUser')
+const inputUSer = document.querySelector('#inputUser')
 
 function btnContinuar(){
-    if(inputUser.value === ''){
-        alert('Preencha os dados corretamente')
-    }else{
-        localStorage.setItem('nome', inputUser.value);
-    }
+    localStorage.setItem('nome', inputUSer.value);
 }
