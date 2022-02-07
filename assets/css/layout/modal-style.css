@@ -1,0 +1,96 @@
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.titulo{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.modal-container.mostrar{
+    display: flex; 
+ }
+
+.modal{
+    background: #fff;
+    width: 60%;
+    min-width: 300px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0, .5);
+    position: relative;
+}
+
+.btn-fechar{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.container-conteudo{
+    display: grid;
+}
+.container-conteudo input, .container-conteudo select{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #949494;
+    padding: 10px;
+    margin: 1rem;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, .7);
+}
+
+#btn-inferior{
+    border: none;
+    background-color: #14a35b;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+@media (min-width:320px) and (max-width: 425px){
+    .modal{
+        height: 90vh;
+    }
+    .container-conteudo{
+        height: 50vh;
+    }
+    #valor, #descricao, #tipo, #data, #dia, #mes, #ano{
+        margin: .5rem;
+        padding: 10px 0;
+    }
+    #btn-inferior{
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width:426px) and (max-width: 767px){
+    .modal{
+        height: 90vh;
+    }
+    .container-conteudo{
+        height: 50vh;
+    }
+    #valor, #descricao, #tipo, #data, #dia, #mes, #ano{
+        margin: .5rem;
+        padding: 10px 0;
+    }
+    #btn-inferior{
+        margin-top: 1rem;
+    }
+}
