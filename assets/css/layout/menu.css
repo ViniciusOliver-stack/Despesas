@@ -1,0 +1,55 @@
+.navbar{
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    margin-top: .5rem;
+    font-weight: 600;
+    color: #14a35b;
+}
+.navbar img{
+    width: 3.5rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo p{
+    padding-left: 1rem;
+    padding-top: .3rem;
+    font-size: 2rem;
+}
+
+.btn-comecar{
+    background-color: #14a35b;
+    color: #fff;
+
+    margin-top: 1rem;
+
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+@media (min-width:320px) and (max-width: 425px){
+    .logo p{
+        padding-left: 1rem;
+        padding-top: .3rem;
+        font-size: 1.5rem;
+    }
+    .btn-comecar{
+        padding: 15px;
+        font-size: .8rem;
+    }
+    .navbar img{
+        width: 3rem;
+    }
+}

@@ -1,0 +1,113 @@
+.container-conteudo, .title-info, ul, .line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+/*Apresentação*/
+.container-conteudo {
+    height: 80vh;
+}
+.container-titulo, .container-logo, .container-info{
+    width: 80vw;
+    margin: 0 auto;
+}
+.container-titulo h1{
+    font-size: 3rem;
+    color: #1b4332;
+    margin-bottom: .8rem;
+}
+.container-titulo p{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, .5);
+}
+.line{
+    margin: 3rem auto;
+    border: 1px solid #ccc;
+    background: #ccc;
+    border-radius: 5px;
+}
+
+/*Você no controle de suas despesas*/
+.title-info{
+    padding: 2rem 0;
+    margin: 0 auto;
+    width: 50vw;
+    font-size: 2rem;
+    text-align: center;
+}
+.title-info h1, .container-perguntas h1 {
+    color: #1b4332;
+}
+.info{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.info-icon {
+    width: 3rem;
+}
+.info-title{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: #2a9d8f;
+}
+.info-subtitle{
+    color: rgba(0, 0, 0, .7);
+}
+
+
+/*Perguntas*/
+.container-perguntas{
+    font-size: 1.5rem;
+    text-align: center;
+    width: 90vw;
+    margin: 0 auto;
+}
+.accordion{
+    background: #eee;
+    cursor: pointer;
+    margin: 1rem;
+    padding: 18px;
+    width: 100%;
+    font-size: 1.2rem;
+
+    border: 1px solid #d1d3d5;
+    border-radius: 10px;
+    outline: none;
+
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .4s;
+}
+.active, .accordion:hover{
+    background-color: #ccc;
+}
+.painel{
+    padding: 0 18px;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    font-size: 1.2rem;
+    transition: max-height 0.2s ease-out;
+}
+.accordion:after{
+    content: '\002B';
+    font-size: 1.5rem;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+.active:after{
+    content: "\2212";
+}
+
+footer p{
+    text-align: center;
+    margin-bottom: 20px;
+}

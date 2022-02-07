@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Circular Std', sans-serif;
+
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    
+    background: #f8fefb;
+
+    scroll-behavior: smooth;
+
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: #f8fefb;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #14a35b;
+    border-radius: 20px; 
+    border: 3px solid #f8fefb;
+}
+
+  
