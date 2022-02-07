@@ -45,3 +45,12 @@ function btnFiltro(){
     document.getElementById('btn-inferior').innerHTML = 'Procurar despesas'
     clickModal()
 }
+
+//Local localStorage
+function btnComecar(){
+    if(localStorage.getItem('nome') === '' || localStorage.getItem('nome') === null){
+        location.url = 'https://viniciusoliver-stack.github.io/Despesas/assets/pages/nome-usuario.html' 
+    }else{
+        location.url = 'https://viniciusoliver-stack.github.io/Despesas/assets/pages/despesas.html'
+    }
+}
