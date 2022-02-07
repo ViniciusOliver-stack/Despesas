@@ -1,0 +1,160 @@
+body{
+    background-color: #ebebeb;
+    width: 100%;
+    height: 100vh;
+}
+
+/*Dashboard*/
+.container-dashboard{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;  
+}
+.profile{
+    margin-top: 3rem; 
+    padding: 2rem 3rem;
+}
+.info-profile{
+    display: flex;
+    justify-content: space-between;
+}
+.saldo-geral{
+    border-left: 2px solid #ccc;
+    padding-left: 20px;
+}
+
+.atalhos{
+    border-left: 2px solid #ccc;
+    padding-left: 20px;
+}
+
+/*Texto Dashboard*/
+#texto-horario, #saldo-texto, #texto-atalho{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+#nome-usuario, #saldo{
+    font-size: 1.3rem;
+}
+#nome-usuario p{
+    font-weight: italic;
+}
+.atalhos button{
+    border: none;
+    background: #14a35b;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*Clima*/
+.nome{
+    position: relative;
+}
+#icon-horario{
+    position: absolute;
+    margin-left: 40px;
+    top: 0;
+}
+
+/*Menu*/
+.container-painel{
+    width: 80%;
+    margin: 0 auto;
+}
+.menu-topo{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.menu-topo h4{
+    font-size: 2rem;
+}
+.menu-topo button{
+    border-radius: 25px ;
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+    background: #fff;
+    border: none;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, .7);
+    cursor: pointer;
+}
+
+/*Tabela*/
+.table{
+    background: #fff;
+    margin-top: 5rem;
+    padding: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .2);
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/*Meida Queries*/
+@media (min-width:320px) and (max-width: 425px){
+    .info-profile{
+        display: flex;
+        flex-direction: column;
+    }
+    .nome{
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 1rem;
+    }
+    #texto-horario, #saldo-texto, #texto-atalho{
+        font-size: 1.3rem;
+    }
+    #nome-usuario, #saldo{
+        font-size: 1rem;
+    }
+    .saldo-geral, .atalhos{
+        border: none;
+        border-bottom: 2px solid #ccc;
+        padding: 1rem 0;
+    }
+    .atalhos{
+        border: none;
+    }
+    .btn-cadastrar{
+        font-size: .8rem;
+    }
+
+    .table td{
+       padding: 0 2px;
+       font-size: .9rem;
+       font-weight: 600;
+    }
+}
+@media (min-width:426px) and (max-width: 767px){
+    .info-profile{
+        display: flex;
+        flex-direction: column;
+    }
+    .nome{
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 1rem;
+    }
+    #texto-horario, #saldo-texto, #texto-atalho{
+        font-size: 1.5rem;
+    }
+    #nome-usuario, #saldo{
+        font-size: 1.3rem;
+    }
+    .saldo-geral, .atalhos{
+        border: none;
+        border-bottom: 2px solid #ccc;
+        padding: 1rem 0;
+    }
+    .atalhos{
+        border: none;
+    }
+    .btn-cadastrar{
+        font-size: 1.2rem;
+    }
+}
