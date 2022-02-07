@@ -47,7 +47,9 @@ function btnFiltro(){
 function btnComecar(){
     if(localStorage.getItem('nome') === '' || localStorage.getItem('nome') === null){
         location = 'https://viniciusoliver-stack.github.io/Despesas/assets/pages/nome-usuario.html' 
+        console.log('Foi para a tela de usuario')
     }else{
         location = 'https://viniciusoliver-stack.github.io/Despesas/assets/pages/despesas.html'
+        console.log('Foi para a tela de despesa')
     }
 }
