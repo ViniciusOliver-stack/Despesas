@@ -1,6 +1,9 @@
 @import url('http://fonts.cdnfonts.com/css/circular-std');
-body{
+body, p{
     font-family: 'Circular Std', sans-serif;
+}
+p{
+    font-weight: 500;
 }
 .container-conteudo, .title-info, ul, .line{
     display: flex;
