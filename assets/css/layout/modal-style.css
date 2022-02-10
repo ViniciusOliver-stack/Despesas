@@ -70,7 +70,6 @@
     #valor, #descricao, #tipo, #data, #dia, #mes, #ano{
         margin: .5rem;
         padding: 10px 0;
-        border: none;
         background: none;
     }
     #btn-inferior{
