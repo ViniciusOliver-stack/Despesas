@@ -2,9 +2,7 @@
 body, p{
     font-family: 'Circular Std', sans-serif;
 }
-p{
-    font-weight: 500;
-}
+
 .container-conteudo, .title-info, ul, .line{
     display: flex;
     justify-content: center;
@@ -29,6 +27,8 @@ p{
 .container-titulo p{
     font-size: 1rem;
     color: rgba(0, 0, 0, .5);
+    font-weight: 500;
+    font-family: 'Circular Std', sans-serif;
 }
 .line{
     margin: 3rem auto;
