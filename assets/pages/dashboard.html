@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/png" href="../images/icons/piggy-bank-fav-icon.png" />
+    <title>Despezas</title>
+    
+    <link rel="stylesheet" href="../css/layout/despesas-style.css">
+</head>
+<body>
+    <div class="container-menu">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../images/Economies_icon.ico" alt="">
+                <p class="title">Despezas</p>
+            </div>
+
+        </nav>
+    </div>
+    
+    <div class="container-dashboard">
+        <div class="profile">
+            <div class="info-profile">
+                <div class="nome">
+                    <p id="texto-horario"></p>
+                    <p id="nome-usuario">
+                        
+                        <img style="width: 40px" id="icon-horario" >
+                    </p>
+                </div> <!--Fim nome-->
+                <div class="saldo-geral">
+                    <p id="saldo-texto">Saldo Geral</p>
+                    <p id="saldo">R$ <span>0,00</span></p>
+                </div> <!--Fim Saldo Geral-->
+                <div class="atalhos">
+                    <p id="texto-atalho">Atalhos</p>
+                    <button class="btn-cadastrar">
+                        <a href="../pages/despesas.html">Cadastrar</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <section class="container-painel">
+        <div class="menu-painel">
+            <div class="menu-topo">
+                <h4>Despesas</h4>
+                <button
+                onclick="btnFiltro()">
+                <img src="../images/icons/filter.svg" alt="">
+            </button>
+            </div>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Data</td>
+                    <td>Descricao</td>
+                    <td>Categoria</td>
+                    <td>Valor</td>
+                    <td>Ações</td>
+                </tr>
+            </thead>
+        </table>
+    </section>
+
+
+    <!--Modal-->
+    <div id="modal-dialog" class="modal-container">
+        <div class="modal">
+            <button class="btn-fechar">X</button>
+            <h3 class="titulo" id="title"></h3>
+            
+            <div class="container-conteudo">
+                <input type="number" name="Valor" id="valor" placeholder="R$ 0,00" autocomplete="off">
+                <input type="text"  class="descricao" id="descricao" placeholder="Descrição" autocomplete="off">
+            <select  class="tipo" id="tipo"> 
+                <option value="">Tipo</option>
+                <option value="1">Alimentação</option>
+                <option value="2">Educação</option>
+                <option value="3">Lazer</option>
+                <option value="4">Saúde</option>
+                <option value="5">Transporte</option>
+                <option value="6">Outro(s)</option>
+            </select>
+            <div class="data">
+                <input type="number" placeholder="Dia" class="dia" id="dia" autocomplete="off">
+                <select class="mes" id="mes">
+                    <option value="">Mês</option>
+                    <option value="1" class="jan">Janeiro</option>
+                    <option value="2">Fevereiro</option>
+                    <option value="3">Março</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Maio</option>
+                    <option value="6">Junho</option>
+                    <option value="7">Julho</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select>
+                <select class="" id="ano">
+                    <option value="">Ano</option>
+                    <option value="ano">2022</option>
+                </select>
+            </div>
+            
+            </div>
+            
+            <button id="btn-fechar">Salvar</button>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/despesas.js"></script>
+</body>
+</html>

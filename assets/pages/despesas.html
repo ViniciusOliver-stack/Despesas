@@ -44,79 +44,48 @@
     </div>
 
     
+    <!--Cadastro-->
 
-    <section class="container-painel">
-        <div class="menu-painel">
-            <div class="menu-topo">
-                <h4>Despesas</h4>
-                <button
-                onclick="btnFiltro()">
-                <img src="../images/icons/filter.svg" alt="">
-            </button>
-            </div>
-        </div>
+    <div class="container-despesa">
 
-        <table class="table">
-            <thead>
-                <tr>
-                    <td>Data</td>
-                    <td>Descricao</td>
-                    <td>Categoria</td>
-                    <td>Valor</td>
-                    <td>Ações</td>
-                </tr>
-            </thead>
-        </table>
-    </section>
+        
 
-
-    <!--Modal-->
-    <div id="modal-dialog" class="modal-container">
-        <div class="modal">
-            <button class="btn-fechar">X</button>
-            <h3 class="titulo" id="title"></h3>
-            
-            <div class="container-conteudo">
-                <input type="number" name="Valor" id="valor" placeholder="R$ 0,00" autocomplete="off">
-            <input type="text" id="descricao" placeholder="Descrição" autocomplete="off">
-            <select id="tipo"> 
-                <option value="">Tipo</option>
-                <option value="1">Alimentação</option>
-                <option value="2">Educação</option>
-                <option value="3">Lazer</option>
-                <option value="4">Saúde</option>
-                <option value="5">Transporte</option>
-                <option value="6">Outro(s)</option>
-            </select>
-            <div class="data">
-                <input type="number" placeholder="Dia" id="dia" autocomplete="off">
-                <select id="mes">
-                    <option value="">Mês</option>
-                    <option value="1" class="jan">Janeiro</option>
-                    <option value="2">Fevereiro</option>
-                    <option value="3">Março</option>
-                    <option value="4">Abril</option>
-                    <option value="5">Maio</option>
-                    <option value="6">Junho</option>
-                    <option value="7">Julho</option>
-                    <option value="8">Agosto</option>
-                    <option value="9">Setembro</option>
-                    <option value="10">Outubro</option>
-                    <option value="11">Novembro</option>
-                    <option value="12">Dezembro</option>
-                </select>
-                <select id="ano">
-                    <option value="">Ano</option>
-                    <option value="ano">2022</option>
-                </select>
-            </div>
-            
-            </div>
-            
-            <button id="btn-inferior">Salvar</button>
-        </div>
+        <input type="number" name="Valor" id="valor" placeholder="R$ 0,00" autocomplete="off">
+        <input type="text" id="descricao" placeholder="Descrição" autocomplete="off">
+    <select id="tipo"> 
+        <option value="">Tipo</option>
+        <option value="1">Alimentação</option>
+        <option value="2">Educação</option>
+        <option value="3">Lazer</option>
+        <option value="4">Saúde</option>
+        <option value="5">Transporte</option>
+        <option value="6">Outro(s)</option>
+    </select>
+    <div class="data">
+        <input type="number" placeholder="Dia" id="dia" autocomplete="off">
+        <select id="mes">
+            <option value="">Mês</option>
+            <option value="1" class="jan">Janeiro</option>
+            <option value="2">Fevereiro</option>
+            <option value="3">Março</option>
+            <option value="4">Abril</option>
+            <option value="5">Maio</option>
+            <option value="6">Junho</option>
+            <option value="7">Julho</option>
+            <option value="8">Agosto</option>
+            <option value="9">Setembro</option>
+            <option value="10">Outubro</option>
+            <option value="11">Novembro</option>
+            <option value="12">Dezembro</option>
+        </select>
+        <select id="ano">
+            <option value="">Ano</option>
+            <option value="ano">2022</option>
+        </select>
     </div>
-
+    
+    </div>
     <script src="../js/script.js"></script>
+    <script src="../js/despesas.js"></script>
 </body>
 </html>

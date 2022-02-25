@@ -1,5 +1,6 @@
 @import "./menu.css";
 @import "./dashboard-style.css";
+@import "./page-despesas.css";
 @import "./modal-style.css";
 
 @import url('http://fonts.cdnfonts.com/css/circular-std');
@@ -8,6 +9,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Circular Std', sans-serif;
+    text-decoration: none;
 }
 
 body::-webkit-scrollbar {

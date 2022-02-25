@@ -1,0 +1,7 @@
+@import "./menu.css";
+@import "./dashboard-style.css";
+
+.container-despesa{
+    width: 70%;
+    margin: 0 auto;
+}
